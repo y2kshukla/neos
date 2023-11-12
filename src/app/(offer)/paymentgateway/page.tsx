@@ -15,7 +15,7 @@ const PaymentGateWay = () => {
                     <h1 className="text-2xl font-bold">Success!</h1>
                     <div className="text-sm text-gray">
                         You have received an email to xxx@gmail.com with the steps to sign the contract.
-                        Come back here once you've signed it. You can also view the contract here.
+                        Come back here once you&apos;ve signed it. You can also view the contract here.
                     </div>
                 </div>
                 <div className="rounded-sm p-3 border flex justify-between">
