@@ -9,7 +9,7 @@ type shellTypes = {
 const AppShell = ({ children, className }: shellTypes) => {
     return (
         <main
-            className={`flex h-screen max-h-[1000px] w-full items-center justify-center bg-center ${className} px-[5%] xl:max-w-6xl py-16 pb-12`}
+            className={`flex h-screen max-h-[1000px] w-full items-center justify-center bg-center ${className} px-[5%] py-16 pb-12`}
         >
             <div className='fixed inset-0 -z-10 h-full w-screen'>
                 <Image fill src={'/images/image-10.jpg'} alt='Hero Image' />
