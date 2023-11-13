@@ -38,7 +38,7 @@ const StandardOffer = () => {
             </CardContent>
             <CardFooter className="flex justify-center">
                 <Button asChild>
-                    <Link href={'/contactdetails'}>
+                    <Link href={'/youroffer'}>
                         CALCULATE YOUR SAVINGS
                     </Link>
                 </Button>

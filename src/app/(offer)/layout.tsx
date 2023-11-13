@@ -14,7 +14,7 @@ export default function OfferLayout({
   children: React.ReactNode
 }) {
   return (
-    <AppShell className='p-20'>
+    <AppShell>
       <div className="flex flex-col items-center gap-8 rounded-xl bg-background overflow-hidden w-full h-full p-10">
           <Stepper/>
         {children} 

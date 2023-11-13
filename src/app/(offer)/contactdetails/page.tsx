@@ -47,29 +47,31 @@ const ContactDetails = () => {
                     </label>
                 </div>
             </div>
-            <div className="w-1/2 flex flex-col gap-4 items-center">
+            <div className="w-1/2 flex flex-col gap-1 items-center">
                 <div className="flex justify-center items-center">
                     <div className="relative h-[350px] aspect-[430/490]">
                         <Image src={`/images/image-11.png`} alt="Solar Panel" fill/>
                     </div>
                 </div>
-                <div className="flex flex-col items-center">
-                    <h1 className="text-2xl font-bold">€3,600</h1>
-                    <div className="flex items-center space-x-2">
-                        <Checkbox id="agreement" />
-                        <label
-                            htmlFor="agreement"
-                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                            Commercialisation Agreement
-                        </label>
+                <div className="flex flex-col gap-2">
+                    <div className="flex flex-col items-center">
+                        <h1 className="text-2xl font-bold">€3,600</h1>
+                        <div className="flex items-center space-x-2">
+                            <Checkbox id="agreement" />
+                            <label
+                                htmlFor="agreement"
+                                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            >
+                                Commercialisation Agreement
+                            </label>
+                        </div>
                     </div>
+                    <Button asChild>
+                        <Link href={'/paymentgateway'}>
+                            GENERATE CONTACT
+                        </Link>
+                    </Button>
                 </div>
-                <Button asChild>
-                    <Link href={'/paymentgateway'}>
-                        GENERATE CONTACT
-                    </Link>
-                </Button>
             </div>
         </div>
     );

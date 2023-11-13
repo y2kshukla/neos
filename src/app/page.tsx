@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <AppShell>
+    <AppShell className='flex justify-center items-center h-screen'>
       <div className='flex'>
         <div className='-mr-16 z-10 relative w-[300px] h-[500px]'>
           <Image src={'/images/iPhone.svg'} alt='Iphone' fill/>
