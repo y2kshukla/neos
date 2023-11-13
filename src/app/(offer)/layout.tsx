@@ -16,10 +16,8 @@ export default function OfferLayout({
   return (
     <AppShell className='p-20'>
       <div className="flex flex-col items-center gap-8 rounded-xl bg-background overflow-hidden w-full h-full p-10">
-        <div className='w-2/3'>
           <Stepper/>
-        </div>
-        {children}
+        {children} 
       </div>
     </AppShell>
   )

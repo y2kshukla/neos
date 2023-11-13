@@ -14,7 +14,7 @@ const Description = () => {
     ];
     return (
         <AppShell className="p-20">
-            <div className="flex gap-8 rounded-xl bg-background overflow-hidden w-full h-full p-10">
+            <div className="flex gap-8 justify-between items-center rounded-xl bg-background overflow-hidden w-full h-full p-10">
                 <div className="flex flex-col gap-4 w-1/2">
                     <div className="flex flex-col gap-2">
                         <h1 className="font-bold text-3xl">What is Virtual Solar?</h1>
@@ -25,11 +25,11 @@ const Description = () => {
                             <div key={index}>👉 {item}</div>
                         ))}
                     </ul>
-                    <Button asChild>
+                    <Button asChild className="self-start">
                         <Link href={'/getoffer'}>CALCULATE YOUR SAVINGS</Link>
                     </Button>
                 </div>
-                <div className="relative w-1/2 aspect-square">
+                <div className="relative w-1/2 max-w-[436px] aspect-[436/490]">
                     <Image fill src={'/images/image-11.png'} alt="Solar Panel"/>
                 </div>
             </div>

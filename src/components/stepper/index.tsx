@@ -1,29 +1,38 @@
 'use client'
  
 import { usePathname } from 'next/navigation'
-import { BsCheckCircleFill } from "react-icons/bs";
+import { Separator } from '../ui/separator';
 
 const Stepper = () => {
     const pathname = usePathname();
     console.log(pathname);
+
+    const Number = ({ number, isActive }: { number: number; isActive: boolean; }) => {
+        return (
+            <span className={`${isActive ? 'bg-primary' : 'bg-[#EAEAED]'} ${isActive ? 'text-white' : 'text-black'} w-8 h-8 flex items-center justify-center rounded-full`}>{number}</span>
+        );
+    }
+
     return (
-        <ol className="flex items-center w-full text-sm font-medium text-center text-gray-500 dark:text-gray-400 sm:text-base">
-            <li className={`flex md:w-full items-center ${(pathname == '/getoffer' || pathname == '/standardoffer' || pathname == '/personalizedoffer' || pathname == '/youroffer' || pathname == '/contactdetails' || pathname == '/paymentgateway' || pathname == '/success') && 'text-blue-600 dark:text-blue-500'} sm:after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700`}>
+        <ol className="flex items-center justify-center gap-2 w-full text-sm font-medium text-center text-gray-500 dark:text-gray-400 sm:text-base">
+            <li className={`flex items-center text-gray ${(pathname == '/getoffer' || pathname == '/standardoffer' || pathname == '/personalizedoffer' || pathname == '/youroffer' || pathname == '/contactdetails' || pathname == '/paymentgateway' || pathname == '/success') && 'text-black'}`}>
                 <span className="flex items-center gap-2 after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500">
-                    <BsCheckCircleFill/>
-                    Receive <span className="hidden sm:inline-flex sm:ms-1">Offer</span>
+                    <Number number={1} isActive={pathname == '/getoffer' || pathname == '/standardoffer' || pathname == '/personalizedoffer' || pathname == '/youroffer' || pathname == '/contactdetails' || pathname == '/paymentgateway' || pathname == '/success'}/>
+                    Receive&nbsp;Offer
                 </span>
             </li>
-            <li className={`flex md:w-full items-center ${(pathname == '/contactdetails' || pathname == '/paymentgateway' || pathname == '/success') && 'text-blue-600 dark:text-blue-500'} sm:after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700`}>
+            <Separator className='w-28'/>
+            <li className={`flex items-center text-gray ${(pathname == '/contactdetails' || pathname == '/paymentgateway' || pathname == '/success') && 'text-black'}`}>
                 <span className={`flex items-center gap-2 after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500`}>
-                    <BsCheckCircleFill/>
-                    Sign <span className="hidden sm:inline-flex sm:ms-1">Contract</span>
+                    <Number number={2} isActive={pathname == '/contactdetails' || pathname == '/paymentgateway' || pathname == '/success'}/>
+                    Sign&nbsp;Contract
                 </span>
             </li>
-            <li className={`flex md:w-full items-center ${(pathname == '/success') && 'text-blue-600 dark:text-blue-500'} after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700`}>
+            <Separator className='w-28'/>
+            <li className={`flex items-center text-gray ${(pathname == '/success') && 'text-black'}`}>
                 <span className="flex items-center gap-2 after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500">
-                    <BsCheckCircleFill/>
-                    Enjoy <span className="hidden sm:inline-flex sm:ms-1">Solar</span>
+                    <Number number={3} isActive={pathname == '/success'}/>
+                    Enjoy&nbsp;Solar
                 </span>
             </li>
         </ol>
