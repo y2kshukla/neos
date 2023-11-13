@@ -1,21 +1,23 @@
-import Image from "next/image";
-import Navbar from "../navbar";
+import Image from 'next/image';
+import Navbar from '../navbar';
 
 type shellTypes = {
     children: React.ReactNode;
     className?: string;
-}
+};
 
-const AppShell = ({children, className}: shellTypes) => {
+const AppShell = ({ children, className }: shellTypes) => {
     return (
-        <main className={`flex justify-center items-center w-full max-h-screen h-screen bg-center ${className} px-12 py-16 pb-12`}>
-            <div className="fixed inset-0 -z-10 w-screen h-full">
-                <Image fill src={'/images/image-10.jpg'} alt="Hero Image"/>
+        <main
+            className={`flex h-screen max-h-[1000px] w-full items-center justify-center bg-center ${className} px-[5%] xl:max-w-6xl py-16 pb-12`}
+        >
+            <div className='fixed inset-0 -z-10 h-full w-screen'>
+                <Image fill src={'/images/image-10.jpg'} alt='Hero Image' />
             </div>
-            <Navbar/>
+            <Navbar />
             {children}
         </main>
     );
-}
- 
+};
+
 export default AppShell;
