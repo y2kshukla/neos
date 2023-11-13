@@ -16,7 +16,7 @@ export default function Home() {
           <h1 className='text-4xl font-bold'>Welcome to the Future</h1>
           <p>Discover Virtual Solar. No installation. Cheap energy. Instant connection. </p>
           <div className='flex gap-3'>
-            <Button asChild className='!bg-white !text-foreground self-start'>
+            <Button asChild variant={`outline`} className='text-black'>
               <Link href={`/description`}>LEARN MORE</Link>
             </Button>
             <Button className='!bg-transparent border border-secondary !text-secondary self-start'>GET QUOTE</Button>
