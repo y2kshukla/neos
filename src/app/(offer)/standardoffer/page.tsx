@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 const StandardOffer = () => {
     return (
-        <Card className='max-w-lg border-none'>
+        <Card className='max-w-lg w-full h-full max-h-[500px] flex flex-col justify-between border-none'>
             <CardHeader>
                 <CardTitle className='text-center text-3xl'>Standard offer</CardTitle>
             </CardHeader>

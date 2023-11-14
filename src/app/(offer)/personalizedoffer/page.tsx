@@ -12,13 +12,13 @@ import Link from 'next/link';
 
 const PersonalizedOffer = () => {
     return (
-        <Card className='max-w-md border-none'>
+        <Card className='max-w-lg w-full h-full max-h-[500px] flex flex-col justify-between border-none'>
             <CardHeader>
-                <CardTitle className='text-center'>
+                <CardTitle className='text-center text-3xl'>
                     Personalized Offer
                 </CardTitle>
             </CardHeader>
-            <CardContent className='flex flex-col gap-4'>
+            <CardContent className='flex flex-col gap-6'>
                 <div>
                     <Label htmlFor='CUPS'>CUPS</Label>
                     <Input type='text' id='CUPS' placeholder='Enter here' />
@@ -27,7 +27,7 @@ const PersonalizedOffer = () => {
                         bills
                     </span>
                 </div>
-                <div className='flex gap-2'>
+                <div className='flex gap-4'>
                     <div>
                         <Label htmlFor='first_name'>First Name</Label>
                         <Input
@@ -45,7 +45,7 @@ const PersonalizedOffer = () => {
                         />
                     </div>
                 </div>
-                <div className='flex gap-2'>
+                <div className='flex gap-4'>
                     <div>
                         <Label htmlFor='email'>Email Address</Label>
                         <Input
