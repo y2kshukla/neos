@@ -13,7 +13,7 @@ import Link from 'next/link';
 const GetOffer = () => {
     const CardS = ({ isPremium }: { isPremium?: boolean }) => {
         return (
-            <Card className={`max-w-xs ${isPremium && 'bg-[#E7F5FA]'}`}>
+            <Card className={`h-full flex flex-col justify-between max-w-xs ${isPremium && 'bg-[#E7F5FA]'}`}>
                 <CardHeader className='border-b'>
                     <CardTitle>
                         <div className='flex items-center justify-center gap-2'>
@@ -59,7 +59,7 @@ const GetOffer = () => {
         );
     };
     return (
-        <div className='flex gap-8'>
+        <div className='flex gap-8 h-full max-h-[500px]'>
             <CardS />
             <CardS isPremium />
         </div>

@@ -12,11 +12,11 @@ import Link from 'next/link';
 
 const StandardOffer = () => {
     return (
-        <Card className='max-w-sm border-none'>
+        <Card className='max-w-lg border-none'>
             <CardHeader>
-                <CardTitle className='text-center'>Standard offer</CardTitle>
+                <CardTitle className='text-center text-3xl'>Standard offer</CardTitle>
             </CardHeader>
-            <CardContent className='flex flex-col gap-4'>
+            <CardContent className='flex flex-col gap-6'>
                 <div>
                     <Label htmlFor='Number_of_people'>
                         Number of people living in house
@@ -27,7 +27,7 @@ const StandardOffer = () => {
                         placeholder='Enter here'
                     />
                 </div>
-                <div className='flex gap-2'>
+                <div className='flex gap-4'>
                     <div>
                         <Label htmlFor='first_name'>First Name</Label>
                         <Input
@@ -45,7 +45,7 @@ const StandardOffer = () => {
                         />
                     </div>
                 </div>
-                <div className='flex gap-2'>
+                <div className='flex gap-4'>
                     <div>
                         <Label htmlFor='email'>Email Address</Label>
                         <Input
