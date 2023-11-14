@@ -43,7 +43,7 @@ const ContactDetails = () => {
     };
     return (
         <div className='flex'>
-            <div className='flex w-1/2 flex-col gap-4'>
+            <div className='flex w-1/2 flex-col gap-4 max-lg:gap-2'>
                 <h1 className='text-2xl font-bold'>Your Details</h1>
                 <Card>
                     <CardContent className='flex flex-col gap-2 pt-6'>
