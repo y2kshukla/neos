@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 const PersonalizedOffer = () => {
     return (
-        <Card className='max-w-lg w-full h-full max-h-[500px] flex flex-col justify-between border-none'>
+        <Card className='max-w-lg w-full h-full max-h-[500px] xl:max-h-[500px] flex flex-col justify-between border-none'>
             <CardHeader>
                 <CardTitle className='text-center text-3xl'>
                     Personalized Offer
@@ -27,8 +27,8 @@ const PersonalizedOffer = () => {
                         bills
                     </span>
                 </div>
-                <div className='flex gap-4'>
-                    <div>
+                <div className='flex gap-4 w-full'>
+                    <div className='w-1/2'>
                         <Label htmlFor='first_name'>First Name</Label>
                         <Input
                             type='text'
@@ -36,7 +36,7 @@ const PersonalizedOffer = () => {
                             placeholder='Enter here'
                         />
                     </div>
-                    <div>
+                    <div className='w-1/2'>
                         <Label htmlFor='last_name'>Last Name</Label>
                         <Input
                             type='text'
@@ -45,8 +45,8 @@ const PersonalizedOffer = () => {
                         />
                     </div>
                 </div>
-                <div className='flex gap-4'>
-                    <div>
+                <div className='flex gap-4 w-full'>
+                    <div className='w-1/2'>
                         <Label htmlFor='email'>Email Address</Label>
                         <Input
                             type='email'
@@ -54,7 +54,7 @@ const PersonalizedOffer = () => {
                             placeholder='Enter here'
                         />
                     </div>
-                    <div>
+                    <div className='w-1/2'>
                         <Label htmlFor='phone'>Phone Number</Label>
                         <Input type='tel' id='phone' placeholder='Enter here' />
                     </div>
