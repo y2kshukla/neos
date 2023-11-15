@@ -1,4 +1,5 @@
 import SubTitle from '@/components/title/subtitle';
+import H2 from '@/components/typography/h2';
 import { Button } from '@/components/ui/button';
 import {
     Card,
@@ -16,9 +17,9 @@ const PersonalizedOffer = () => {
         <Card className='max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full h-full max-h-[450px] xl:max-h-[500px] flex flex-col justify-between border-none'>
             <CardHeader>
                 <CardTitle>
-                    <SubTitle className='text-center'>
+                    <H2 className='text-center'>
                         Personalized Offer
-                    </SubTitle>
+                    </H2>
                 </CardTitle>
             </CardHeader>
             <CardContent className='flex flex-col gap-4 2xl:gap-6'>

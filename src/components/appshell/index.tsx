@@ -17,7 +17,9 @@ const AppShell = ({ children, className, footer }: shellTypes) => {
                 <Image fill src={'/images/image-10.jpg'} alt='Hero Image' />
             </div>
             <Navbar />
-            {children}
+            <div className='w-full'>
+                {children}
+            </div>
             {footer && <Footer />}
         </main>
     );

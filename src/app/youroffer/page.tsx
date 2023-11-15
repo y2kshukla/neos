@@ -3,6 +3,12 @@ import Graph from '@/components/chart';
 import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
 import Stepper from '@/components/stepper';
+import H1 from '@/components/typography/h1';
+import H2 from '@/components/typography/h2';
+import H3 from '@/components/typography/h3';
+import H4 from '@/components/typography/h4';
+import Large from '@/components/typography/large';
+import P from '@/components/typography/p';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
@@ -27,7 +33,7 @@ const YourOffer = () => {
                         <div className='flex flex-col gap-8 max-w-4xl'>
                             <div className='flex w-full items-center justify-between'>
                                 <div className='flex w-1/2 flex-col items-center justify-center gap-2'>
-                                    <div className='relative aspect-[400/425] w-full max-w-[400px]'>
+                                    <div className='relative aspect-[400/420] w-full max-w-[400px]'>
                                         <Image
                                             src={`/images/image-11.png`}
                                             alt='Solar Panel'
@@ -43,10 +49,10 @@ const YourOffer = () => {
                                 </div>
                                 <div className='flex flex-col gap-4'>
                                     <div className='flex flex-col gap-1 '>
-                                        <h1 className='text-3xl font-bold'>
+                                        <H2>
                                             Your Offer
-                                        </h1>
-                                        <p className='text-base font-medium text-gray'>{`5 Panels (Equivalent to 3.2KWp)`}</p>
+                                        </H2>
+                                        <P className='text-base font-medium text-gray'>{`5 Panels (Equivalent to 3.2KWp)`}</P>
                                     </div>
                                     <ul className='flex flex-col gap-2 text-base'>
                                         <li>{`• €600 yearly savings (€15,000 total savings)`}</li>
@@ -88,9 +94,9 @@ const YourOffer = () => {
                             </div>
                             <div className='flex w-full gap-4'>
                                 <div className='flex w-1/2 flex-col gap-8 rounded-3xl border px-4 py-8 pl-8'>
-                                    <h2 className='text-center text-xl font-bold'>
+                                    <H3 className='text-center'>
                                         How It Works?
-                                    </h2>
+                                    </H3>
                                     <ul className='flex list-disc flex-col gap-4'>
                                         <li>
                                             Neos becomes your retailer and uses the grid
@@ -135,9 +141,9 @@ const YourOffer = () => {
                                 </div>
                                 <div className='flex w-1/2 flex-col gap-4'>
                                     <div className='flex flex-col gap-8 rounded-3xl border px-4 py-8 pl-8'>
-                                        <h2 className='text-center text-xl font-bold'>
+                                        <H3 className='text-center'>
                                             Compare Our Offer
-                                        </h2>
+                                        </H3>
                                         <ul className='flex list-disc flex-col gap-4'>
                                             <li>
                                                 35% cheaper than rooftop solar panels
@@ -157,9 +163,9 @@ const YourOffer = () => {
                                         </ul>
                                     </div>
                                     <div className='flex h-full flex-col items-center justify-center gap-5 rounded-3xl border bg-[#E7F5FA] px-4 py-8'>
-                                        <div className='text-center text-lg font-semibold'>
-                                            Review your proposal with your Solar Expert
-                                        </div>
+                                        <Large className='text-center'>
+                                            Review your proposal with<br/>your Solar Expert
+                                        </Large>
                                         <Avatar className='h-[50px] w-[50px] rounded-full'>
                                             <AvatarImage src='/images/person.png' />
                                             <AvatarFallback>CN</AvatarFallback>

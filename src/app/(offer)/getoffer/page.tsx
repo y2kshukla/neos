@@ -1,4 +1,7 @@
 import Text from '@/components/title/paragraph';
+import H2 from '@/components/typography/h2';
+import H3 from '@/components/typography/h3';
+import P from '@/components/typography/p';
 import { Button } from '@/components/ui/button';
 import {
     Card,
@@ -27,22 +30,24 @@ const GetOffer = () => {
                                     />
                                 </span>
                             )}
+                            <H3>
                             {isPremium
                                 ? 'Personalised Offer'
                                 : 'Standard Offer'}
+                            </H3> 
                         </div>
                     </CardTitle>
                 </CardHeader>
                 <CardContent className='my-8 flex flex-col gap-8'>
                     <CardDescription className='text-center text-base font-medium'>
-                        <Text>
+                        <P>
                             You will not need anything else to get the offer
-                        </Text>
+                        </P>
                     </CardDescription>
                     <ul className='flex flex-col items-center gap-4'>
-                        <li>Instant Calculation</li>
-                        <li>Answer 4 Questions</li>
-                        <li>{isPremium ? '100' : '85'}% Accurate</li>
+                        <li><P>Instant Calculation</P></li>
+                        <li><P>Answer 4 Questions</P></li>
+                        <li><P>{isPremium ? '100' : '85'}% Accurate</P></li>
                     </ul>
                 </CardContent>
                 <CardFooter className='flex justify-center'>

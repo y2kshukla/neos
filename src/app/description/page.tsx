@@ -1,6 +1,9 @@
 import AppShell from '@/components/appshell';
 import Text from '@/components/title/paragraph';
 import SubTitle from '@/components/title/subtitle';
+import H2 from '@/components/typography/h2';
+import List from '@/components/typography/list';
+import P from '@/components/typography/p';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -21,19 +24,21 @@ const Description = () => {
                 <div className='flex w-full gap-8 max-w-3xl'>
                     <div className='flex w-1/2 flex-col gap-4'>
                         <div className='flex flex-col gap-2'>
-                            <SubTitle>
+                            <H2>
                                 What is Virtual Solar?
-                            </SubTitle>
-                            <Text className='text-gray'>
+                            </H2>
+                            <P className='text-gray'>
                                 Buy panels inside of solar parks. Receive
                                 electricity through the grid system.
-                            </Text>
+                            </P>
                         </div>
-                        <ul className='flex flex-col gap-3 text-base text-gray'>
+                        <List className='flex flex-col gap-3 text-gray'>
                             {listArray.map((item: string, index: number) => (
-                                <li key={index}>{item}</li>
+                                <li key={index}>
+                                    {item}
+                                </li>
                             ))}
-                        </ul>
+                        </List>
                         <Button asChild className='self-start'>
                             <Link href={'/getoffer'}>CALCULATE YOUR SAVINGS</Link>
                         </Button>

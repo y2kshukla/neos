@@ -1,4 +1,7 @@
 import SubTitle from '@/components/title/subtitle';
+import H1 from '@/components/typography/h1';
+import H2 from '@/components/typography/h2';
+import H3 from '@/components/typography/h3';
 import { Button } from '@/components/ui/button';
 import {
     Card,
@@ -16,9 +19,9 @@ const StandardOffer = () => {
         <Card className='max-w-lg xl:max-w-2xl w-full h-full max-h-[450px] xl:max-h-[500px] flex flex-col justify-between border-none'>
             <CardHeader>
                 <CardTitle>
-                    <SubTitle className='text-center'>
+                    <H2 className='text-center'>
                         Standard offer
-                    </SubTitle>
+                    </H2>
                 </CardTitle>
             </CardHeader>
             <CardContent className='flex flex-col gap-6 2xl:gap-8'>
