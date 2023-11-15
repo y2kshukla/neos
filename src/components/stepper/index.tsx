@@ -5,7 +5,6 @@ import { Separator } from '../ui/separator';
 
 const Stepper = () => {
     const pathname = usePathname();
-    console.log(pathname);
 
     const Number = ({
         number,
@@ -39,7 +38,7 @@ const Stepper = () => {
                     'text-black'
                 }`}
             >
-                <span className="after:text-gray-200 dark:after:text-gray-500 flex items-center gap-2 after:mx-2 after:content-['/'] sm:after:hidden">
+                <span className="flex items-center gap-2">
                     <Number
                         number={1}
                         isActive={
@@ -65,7 +64,7 @@ const Stepper = () => {
                 }`}
             >
                 <span
-                    className={`after:text-gray-200 dark:after:text-gray-500 flex items-center gap-2 after:mx-2 after:content-['/'] sm:after:hidden`}
+                    className={`flex items-center gap-2`}
                 >
                     <Number
                         number={2}
@@ -84,7 +83,7 @@ const Stepper = () => {
                     pathname == '/success' && 'text-black'
                 }`}
             >
-                <span className="after:text-gray-200 dark:after:text-gray-500 flex items-center gap-2 after:mx-2 after:content-['/'] sm:after:hidden">
+                <span className="flex items-center gap-2">
                     <Number number={3} isActive={pathname == '/success'} />
                     Enjoy&nbsp;Solar
                 </span>

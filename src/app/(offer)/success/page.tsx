@@ -1,3 +1,5 @@
+import Text from '@/components/title/paragraph';
+import SubTitle from '@/components/title/subtitle';
 import { Button } from '@/components/ui/button';
 import {
     Card,
@@ -21,13 +23,13 @@ const Success = () => {
                     <span className='text-5xl text-[#27AE60]'>
                         <BsCheckCircleFill />
                     </span>
-                    <h1 className='text-2xl font-bold'>Success!</h1>
-                    <div className='text-sm text-gray'>
+                    <SubTitle>Success!</SubTitle>
+                    <Text className='text-gray'>
                         You have received an email to xxx@gmail.com with the
                         steps to sign the contract. Come back here once
                         you&apos;ve signed it. You can also view the contract
                         here.
-                    </div>
+                    </Text>
                 </div>
                 <div className='flex justify-between rounded-sm border p-3'>
                     <div className='flex items-center gap-2'>

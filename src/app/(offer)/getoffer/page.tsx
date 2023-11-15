@@ -1,3 +1,4 @@
+import Text from '@/components/title/paragraph';
 import { Button } from '@/components/ui/button';
 import {
     Card,
@@ -13,7 +14,7 @@ import Link from 'next/link';
 const GetOffer = () => {
     const CardS = ({ isPremium }: { isPremium?: boolean }) => {
         return (
-            <Card className={`h-full flex flex-col justify-between max-w-xs ${isPremium && 'bg-[#E7F5FA]'}`}>
+            <Card className={`h-full flex flex-col justify-between ${isPremium && 'bg-[#E7F5FA]'}`}>
                 <CardHeader className='border-b'>
                     <CardTitle>
                         <div className='flex items-center justify-center gap-2'>
@@ -34,7 +35,9 @@ const GetOffer = () => {
                 </CardHeader>
                 <CardContent className='my-8 flex flex-col gap-8'>
                     <CardDescription className='text-center text-base font-medium'>
-                        You will not need anything else to get the offer
+                        <Text>
+                            You will not need anything else to get the offer
+                        </Text>
                     </CardDescription>
                     <ul className='flex flex-col items-center gap-4'>
                         <li>Instant Calculation</li>
@@ -59,7 +62,7 @@ const GetOffer = () => {
         );
     };
     return (
-        <div className='flex gap-8 h-full max-h-[500px]'>
+        <div className='flex gap-8 h-full max-h-[470px]'>
             <CardS />
             <CardS isPremium />
         </div>

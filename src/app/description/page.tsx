@@ -1,4 +1,6 @@
 import AppShell from '@/components/appshell';
+import Text from '@/components/title/paragraph';
+import SubTitle from '@/components/title/subtitle';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,18 +16,18 @@ const Description = () => {
         `🌱 100% renewable`,
     ];
     return (
-        <AppShell>
+        <AppShell footer>
             <div className='flex h-full w-full items-center justify-center gap-8 overflow-hidden rounded-xl bg-background p-[5%]'>
                 <div className='flex w-full gap-8 max-w-3xl'>
                     <div className='flex w-1/2 flex-col gap-4'>
                         <div className='flex flex-col gap-2'>
-                            <h1 className='text-3xl font-bold'>
+                            <SubTitle>
                                 What is Virtual Solar?
-                            </h1>
-                            <p className='text-base'>
+                            </SubTitle>
+                            <Text className='text-gray'>
                                 Buy panels inside of solar parks. Receive
                                 electricity through the grid system.
-                            </p>
+                            </Text>
                         </div>
                         <ul className='flex flex-col gap-3 text-base text-gray'>
                             {listArray.map((item: string, index: number) => (

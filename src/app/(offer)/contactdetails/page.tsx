@@ -42,7 +42,7 @@ const ContactDetails = () => {
         );
     };
     return (
-        <div className='flex'>
+        <div className='flex gap-8'>
             <div className='flex w-1/2 flex-col gap-4 max-lg:gap-2'>
                 <h1 className='text-2xl font-bold'>Your Details</h1>
                 <Card>
@@ -97,8 +97,8 @@ const ContactDetails = () => {
                 </div>
             </div>
             <div className='flex w-1/2 flex-col items-center gap-1'>
-                <div className='flex items-center justify-center'>
-                    <div className='relative aspect-[400/425] h-[350px]'>
+                <div className='flex items-center justify-center w-full'>
+                    <div className='relative aspect-[400/425] h-[350px] w-full'>
                         <Image
                             src={`/images/image-11.png`}
                             alt='Solar Panel'

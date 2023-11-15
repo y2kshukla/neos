@@ -1,3 +1,4 @@
+import SubTitle from '@/components/title/subtitle';
 import { Button } from '@/components/ui/button';
 import {
     Card,
@@ -12,13 +13,15 @@ import Link from 'next/link';
 
 const PersonalizedOffer = () => {
     return (
-        <Card className='max-w-lg w-full h-full max-h-[500px] xl:max-h-[500px] flex flex-col justify-between border-none'>
+        <Card className='max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full h-full max-h-[450px] xl:max-h-[500px] flex flex-col justify-between border-none'>
             <CardHeader>
-                <CardTitle className='text-center text-3xl'>
-                    Personalized Offer
+                <CardTitle>
+                    <SubTitle className='text-center'>
+                        Personalized Offer
+                    </SubTitle>
                 </CardTitle>
             </CardHeader>
-            <CardContent className='flex flex-col gap-6'>
+            <CardContent className='flex flex-col gap-4 2xl:gap-6'>
                 <div>
                     <Label htmlFor='CUPS'>CUPS</Label>
                     <Input type='text' id='CUPS' placeholder='Enter here' />
@@ -27,7 +30,7 @@ const PersonalizedOffer = () => {
                         bills
                     </span>
                 </div>
-                <div className='flex gap-4 w-full'>
+                <div className='flex gap-4 xl:gap-6 w-full'>
                     <div className='w-1/2'>
                         <Label htmlFor='first_name'>First Name</Label>
                         <Input
@@ -45,7 +48,7 @@ const PersonalizedOffer = () => {
                         />
                     </div>
                 </div>
-                <div className='flex gap-4 w-full'>
+                <div className='flex gap-4 xl:gap-6 w-full'>
                     <div className='w-1/2'>
                         <Label htmlFor='email'>Email Address</Label>
                         <Input
@@ -62,7 +65,7 @@ const PersonalizedOffer = () => {
             </CardContent>
             <CardFooter className='flex justify-center'>
                 <Button asChild>
-                    <Link href={'/contactdetails'}>CALCULATE YOUR SAVINGS</Link>
+                    <Link href={'/youroffer'}>CALCULATE YOUR SAVINGS</Link>
                 </Button>
             </CardFooter>
         </Card>

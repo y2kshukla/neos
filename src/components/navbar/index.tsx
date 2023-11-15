@@ -64,14 +64,13 @@ const Navbar = ({ className }: { className?: string }) => {
                 visible ? '' : '-translate-y-full '
             } ${scrolled && 'bg-white border-b'} ${className}`}
         >
-            <div className='w-1/3'></div>
             <Link
                 href={'/'}
-                className={`w-1/3 text-center flex items-center justify-center text-2xl font-bold text-secondary-foreground ${scrolled && '!text-black'}`}
+                className={`w-1/2 flex items-center justify-start text-2xl font-bold text-secondary-foreground ${scrolled && '!text-black'}`}
             >
                 NEOS
             </Link>
-            <div className='flex w-1/3 items-center justify-end gap-8'>
+            <div className='flex w-1/2 items-center justify-end gap-8'>
                 <div className={`text-lg font-bold text-secondary-foreground ${scrolled && '!text-gray'}`}>
                     FAQs
                 </div>
