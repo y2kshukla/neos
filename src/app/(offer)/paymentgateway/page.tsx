@@ -36,7 +36,7 @@ const PaymentGateWay = () => {
             </div>
             <div className='flex w-1/2 flex-col items-center gap-4'>
                 <div className='flex items-center justify-center'>
-                    <div className='relative aspect-[430/490] h-[350px]'>
+                    <div className='relative aspect-[400/425] h-[350px]'>
                         <Image
                             src={`/images/image-11.png`}
                             alt='Solar Panel'

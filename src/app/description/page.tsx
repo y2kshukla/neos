@@ -5,12 +5,13 @@ import Link from 'next/link';
 
 const Description = () => {
     const listArray = [
-        `80% reduction on electricity bill`,
-        `35% cheaper than rooftop solar`,
-        `Instant connection`,
-        `No need for rooftop`,
-        `25 years useful life`,
-        `100% renewable`,
+        `⚡ 80% reduction on electricity bill`,
+        `💸 35% cheaper than rooftop solar`,
+        `⏱ Instant connection`,
+        `🌆 No need for rooftop`,
+        `🔄 4.5 years payback`,
+        `☀ 25 years useful life`,
+        `🌱 100% renewable`,
     ];
     return (
         <AppShell>
@@ -28,14 +29,14 @@ const Description = () => {
                         </div>
                         <ul className='flex flex-col gap-3 text-base text-gray'>
                             {listArray.map((item: string, index: number) => (
-                                <div key={index}>👉 {item}</div>
+                                <li key={index}>{item}</li>
                             ))}
                         </ul>
                         <Button asChild className='self-start'>
                             <Link href={'/getoffer'}>CALCULATE YOUR SAVINGS</Link>
                         </Button>
                     </div>
-                    <div className='relative aspect-[436/490] w-1/2 max-w-[436px]'>
+                    <div className='relative aspect-[400/425] w-1/2 max-w-[436px]'>
                         <Image
                             fill
                             src={'/images/image-11.png'}
