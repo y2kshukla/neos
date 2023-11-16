@@ -40,7 +40,7 @@ const PaymentGateWay = () => {
             <div className='flex w-1/2 flex-col items-center gap-4'>
                 <div className='flex items-center justify-center w-full'>
                     <div className='w-[200px] min-w-[200px] max-w-[400px]  2xl:w-[400px] h-[200px] min-h-[200px] max-h-[400px] 2xl:h-[400px]'>
-                        <div className='relative aspect-[400/425] h-full w-full'>
+                        <div className='relative aspect-[400/400] w-full max-w-[300px] 2xl:max-w-[450px]'>
                             <Image
                                 src={`/images/image-11.png`}
                                 alt='Solar Panel'

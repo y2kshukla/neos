@@ -14,7 +14,7 @@ export default function OfferLayout({
 }) {
     return (
         <AppShell>
-            <div className='flex h-full w-full flex-col items-center gap-8 overflow-hidden rounded-xl bg-background p-10'>
+            <div className='flex h-full w-full flex-col items-center gap-8 overflow-hidden rounded-xl bg-background 2xl:p-10'>
                 <Stepper />
                 <div className='w-full h-full max-w-3xl flex items-center justify-center'>
                     {children}

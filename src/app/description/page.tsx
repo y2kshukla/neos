@@ -20,7 +20,7 @@ const Description = () => {
     return (
         <AppShell footer>
             {/* <div className='flex h-full w-full items-center justify-center gap-8 overflow-hidden rounded-xl bg-background p-[5%]'> */}
-                <div className='flex items-center w-full gap-8 2xl:gap-16 max-xl:max-w-3xl xl:px-6 2xl:px-8'>
+                <div className='flex items-center w-full gap-8 2xl:gap-16 max-xl:max-w-3xl xl:px-6 2xl:px-10'>
                     <div className='flex w-1/2 flex-col gap-4 2xl:gap-8'>
                         <div className='flex flex-col gap-2'>
                             <H2 className='2xl:text-4xl'>
