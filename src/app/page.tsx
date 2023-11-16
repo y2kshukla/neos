@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 export default function Home() {
     return (
-        <AppShell className='flex h-screen items-center justify-center' footer>
+        <AppShell className='flex h-screen items-center justify-center' footer removeCover>
             <div className='flex -mt-6 xl:-mt-12'>
                 <div className='relative z-10 -mr-16 h-[500px] w-[300px]'>
                     <Image src={'/images/iPhone.svg'} alt='Iphone' fill />
@@ -21,7 +21,7 @@ export default function Home() {
                         Welcome to the Future
                     </H1>
                     <P>
-                        Discover Virtual Solar. No installation. Cheap energy.
+                        Discover Virtual Solar. No installation. Cheap energy.<br/>
                         Instant connection.{' '}
                     </P>
                     <div className='flex gap-3'>

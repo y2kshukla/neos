@@ -19,7 +19,7 @@ const YourOffer = () => {
         <>
             <AppShell className='!min-h-screen !max-h-fit !items-start'>
                 <div className='flex flex-col w-full pb-16'>
-                    <div className='flex w-full items-center justify-between rounded-t-md bg-[#E7F5FA] px-4 py-6'>
+                    <div className='flex w-full items-center justify-between rounded-md bg-[#E7F5FA] px-4 py-6'>
                         <div className='flex gap-4 font-medium'>
                             <span>5 Panels €3,600</span>
                             <span>Average Savings €600/year</span>

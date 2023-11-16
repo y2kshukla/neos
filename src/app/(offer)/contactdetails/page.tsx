@@ -46,7 +46,7 @@ const ContactDetails = () => {
             <div className='flex w-1/2 flex-col gap-4 max-lg:gap-2'>
                 <h1 className='text-2xl font-bold'>Your Details</h1>
                 <Card>
-                    <CardContent className='flex flex-col gap-2 pt-6'>
+                    <CardContent className='flex flex-col gap-1 p-4'>
                         <Details
                             tlCol='First Name'
                             blCol='Cameron'
@@ -98,7 +98,7 @@ const ContactDetails = () => {
             </div>
             <div className='flex w-1/2 flex-col items-center gap-1'>
                 <div className='flex items-center justify-center w-full'>
-                    <div className='relative aspect-[400/425] h-[350px] w-full'>
+                    <div className='relative aspect-[400/425] w-full max-w-[300px]'>
                         <Image
                             src={`/images/image-11.png`}
                             alt='Solar Panel'

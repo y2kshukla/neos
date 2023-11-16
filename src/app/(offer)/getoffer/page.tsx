@@ -38,7 +38,7 @@ const GetOffer = () => {
                         </div>
                     </CardTitle>
                 </CardHeader>
-                <CardContent className='my-8 flex flex-col gap-8'>
+                <CardContent className='my-8 flex flex-col xl:gap-4 2xl:gap-8'>
                     <CardDescription className='text-center text-base font-medium'>
                         <P>
                             You will not need anything else to get the offer

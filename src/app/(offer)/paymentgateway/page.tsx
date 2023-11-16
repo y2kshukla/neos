@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Text from '@/components/title/paragraph';
 import SubTitle from '@/components/title/subtitle';
+import H3 from '@/components/typography/h3';
 
 const PaymentGateWay = () => {
     return (
@@ -38,16 +39,18 @@ const PaymentGateWay = () => {
             </div>
             <div className='flex w-1/2 flex-col items-center gap-4'>
                 <div className='flex items-center justify-center w-full'>
-                    <div className='relative aspect-[400/425] h-[350px] w-full'>
-                        <Image
-                            src={`/images/image-11.png`}
-                            alt='Solar Panel'
-                            fill
-                        />
+                    <div className='w-[200px] min-w-[200px] max-w-[400px]  2xl:w-[400px] h-[200px] min-h-[200px] max-h-[400px] 2xl:h-[400px]'>
+                        <div className='relative aspect-[400/425] h-full w-full'>
+                            <Image
+                                src={`/images/image-11.png`}
+                                alt='Solar Panel'
+                                fill
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className='flex flex-col items-center'>
-                    <h1 className='text-2xl font-bold'>Price to Pay: €3,600</h1>
+                    <H3 className='text-2xl font-bold'>Price to Pay: €3,600</H3>
                     <span>With Commercialisation Agreement</span>
                 </div>
             </div>
